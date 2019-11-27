@@ -1,0 +1,54 @@
+{
+	"name": "jaeger",
+	"description": "Jaeger - Distributed Tracing",
+	"version": "0.1.0",
+	"publisher": "vscode-jaeger",
+	"engines": {
+		"vscode": "^1.38.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:jaeger.start",
+		"onCommand:jaeger.ui",
+		"onCommand:jaeger.stop"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/objectiser/vscode-jaeger.git"
+	},
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "jaeger.start",
+				"title": "Start Jaeger",
+				"category": "Observability"
+			},
+			{
+				"command": "jaeger.ui",
+				"title": "Show Jaeger UI",
+				"category": "Observability"
+			},
+			{
+				"command": "jaeger.stop",
+				"title": "Stop Jaeger",
+				"category": "Observability"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "tslint -p ./",
+		"watch": "tsc -w -p ./"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@types/node": "^10.5.2",
+		"tslint": "^5.16.0",
+		"typescript": "^3.5.1",
+		"@types/vscode": "^1.38.0"
+	}
+}

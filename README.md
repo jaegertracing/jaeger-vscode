@@ -1,2 +1,2 @@
-# vscode-jaeger
-VSCode extension for Jaeger
+# VSCode extension for Jaeger
+
