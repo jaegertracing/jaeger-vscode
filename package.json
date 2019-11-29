@@ -1,7 +1,7 @@
 {
 	"name": "jaeger",
 	"description": "Jaeger - Distributed Tracing",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"publisher": "jaegertracing",
 	"engines": {
 		"vscode": "^1.38.0"
