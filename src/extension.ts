@@ -133,9 +133,6 @@ class JaegerUIPanel {
 	}
 
 	private _getHtmlForWebview(webview: vscode.Webview) {
-		// Use a nonce to whitelist which scripts can be run
-		const nonce = getNonce();
-
 		return `<!DOCTYPE html>
 		<html>
 			<head>
@@ -156,11 +153,3 @@ class JaegerUIPanel {
 	}
 }
 
-function getNonce() {
-	let text = '';
-	const possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-	for (let i = 0; i < 32; i++) {
-		text += possible.charAt(Math.floor(Math.random() * possible.length));
-	}
-	return text;
-}
