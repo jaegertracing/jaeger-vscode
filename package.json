@@ -16,7 +16,7 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/objectiser/vscode-jaeger.git"
+		"url": "https://github.com/objectiser/jaeger-vscode.git"
 	},
 	"main": "./out/extension.js",
 	"contributes": {

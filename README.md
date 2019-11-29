@@ -10,6 +10,8 @@ Jaeger, inspired by [Dapper](https://research.google.com/pubs/pub36356.html) and
 
 Once a Jaeger tracing system has been started, any applications (services) that are being tested within the IDE can report their tracing infomration to Jaeger through the use of an [OpenTracing compliant tracer](https://www.jaegertracing.io/docs/latest/client-libraries/) or using the emerging [OpenTelemetry clients](https://opentelemetry.io/) with Jaeger exporter.
 
+![demo](jaeger-vscode.gif)
+
 This extension contributes three commands that can be used to manage a Jaeger _all-in-one_ server from within the IDE. These commands are:
 
 * Observability: Start Jaeger [jaeger.start]
@@ -18,7 +20,7 @@ This command will start the Jaeger _all-in-one_ server (using in-memory storage)
 
 * Observability: Show Jaeger UI [jaeger.ui]
 
-This command will open a browser to show the Jaeger UI. If the _auchenberg.vscode-browser-preview_ Browser Preview extension (by Kenneth Auchenberg) is installed, the UI will be displayed using the internal browser. Otherwise it will be displayed in the default browser.
+This command will open a web view to show the Jaeger UI.
 
 * Observability: Stop Jaeger [jaeger.stop]
 
