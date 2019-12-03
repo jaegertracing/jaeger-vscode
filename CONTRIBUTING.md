@@ -17,6 +17,17 @@ We gratefully welcome improvements to documentation as well as to code.
     - `npm run watch` or `npm run compile`
  3. `F5` to start debugging
 
+## Testing The Extension
+
+ 1. Install the vsce tool
+     - `npm install -g vsce`
+ 2. Create the extension
+     - `vsce package`
+ 3. Install within vscode
+     - `code --install-extension jaeger-0.2.0.vsix`
+ 4. Once testing completed, uninstall
+     - `code --uninstall-extension jaeger-0.2.0.vsix`
+
 ## Making A Change
 
 *Before making any significant changes, please [open an issue](https://github.com/jaegertracing/jaeger-vscode/issues).*
