@@ -8,7 +8,7 @@ Jaeger, inspired by [Dapper](https://research.google.com/pubs/pub36356.html) and
 * Service dependency analysis
 * Performance / latency optimization
 
-Once a Jaeger tracing system has been started, any applications (services) that are being tested within the IDE can report their tracing infomration to Jaeger through the use of an [OpenTracing compliant tracer](https://www.jaegertracing.io/docs/latest/client-libraries/) or using the emerging [OpenTelemetry clients](https://opentelemetry.io/) with Jaeger exporter.
+Once a Jaeger tracing system has been started, any applications (services) that are being tested within the IDE can report their tracing information to Jaeger through the use of an [OpenTracing compliant tracer](https://www.jaegertracing.io/docs/latest/client-libraries/) or using the emerging [OpenTelemetry clients](https://opentelemetry.io/) with Jaeger exporter.
 
 ![demo](jaeger-vscode.gif)
 
